@@ -42,7 +42,11 @@ public class handlecheckbox {
 			checkboxes.get(i).click();
 			}
 		}
-		
+		// Handel alert
+		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//button[@onclick='jsAlert()']")).click();
+
 
 	}
 
