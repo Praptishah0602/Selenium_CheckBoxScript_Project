@@ -25,7 +25,7 @@ public class handlealert {
            System.out.println(myalert.getText());
            myalert.accept();
 
-           //confirmatio9n alert
+           //confirmation alert
             driver.findElement(By.xpath("//button[@onclick='jsConfirm()']")).click();
             Thread.sleep(5000);
             driver.switchTo().alert().accept();//close using ok button
